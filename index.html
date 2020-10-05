@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .home {
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 90vh;
+        }
+
+        .banner {
+            position: absolute;
+            bottom: 0;
+        }
+
+        .bean {
+            position: absolute;
+            top: 40%;
+            left: 37%;
+            width: 400px;
+            z-index: 1000;
+        }
+
+        .smoke {
+            position: absolute;
+            top: 15%;
+            left: 37%;
+            animation: smoki 2.8s linear infinite;
+        }
+
+        @keyframes smoki {
+            0% {
+                transform: translate(0, 0) scale(1);
+                filter: blur(5px);
+            }
+            100% {
+                transform: translate(100px, -500px) scale(3);
+                filter: blur(10px);
+            }
+        }
+        .main-text{
+            color: #fff;
+            align-items: center;
+            position: absolute;
+            left: 10%;
+            top: 30%;
+        }
+        .main-text h1{
+            font-size: 60px;
+            font-weight: 700;
+        }
+        .main-text p {
+            font-size: 20px;
+            font-weight: 500;
+        }
+    </style>
+</head>
+
+<body>
+    <header style="background-image: url("https://postimg.cc/rDKmcPzP");" class="home">
+        <div>
+            <img src="https://postimg.cc/hXSLrgy7"" class="banner">
+        </div>
+        <div>
+            <img src="https://postimg.cc/hzJbdrCy" alt="" class="bean">
+        </div>
+        <img src="https://postimg.cc/GHSLMxzJ" alt="" class="smoke">
+        <div class="main-text">
+            <h1>Lorem ipsum dolor</h1>
+        <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</P>
+
+        </div>
+    </header>
+</body>
+</html>
